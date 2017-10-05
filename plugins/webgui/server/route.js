@@ -129,6 +129,7 @@ app.post('/api/user/paypal/create', isUser, user.createPaypalOrder);
 app.post('/api/user/paypal/execute', isUser, user.executePaypalOrder);
 
 app.post('/api/user/alipay/callback', user.alipayCallback);
+app.get('/api/user/alipay/callback', user.alipayCallback);
 app.post('/api/user/paypal/callback', user.paypalCallback);
 
 app.post('/api/user/changePassword', user.changePassword);
