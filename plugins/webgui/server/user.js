@@ -241,7 +241,7 @@ exports.checkOrder = (req, res) => {
 };
 
 exports.alipayCallback = (req, res) => {
-  const signStatus = alipay.verifyCallback(req.body);
+  const signStatus = alipay.verifyCallback(req.method === 'POST' ? req.body : req.query);
   if(signStatus === false) {
     return res.send('error');
   }
