@@ -65,13 +65,13 @@ const createOrder = async (user, account, amount, orderType = 3) => {
     body: 'ss',
     timeExpress: 10,
   });*/
-  const addr = jsjConfig.jsjGatewayUrl + '&addnum=' + orderId + '&total=' + amount + '&apiid=' + jsjConfig.apiid + '&apikey=' + md5(jsjConfig.apikey) + '&showurl=' + config.plugins.webgui.site + '/api/user/alipay/callback?';
+  const addr = jsjConfig.jsjGatewayUrl + '&addnum=' + orderId + '&total=' + amount + '&apiid=' + jsjConfig.apiid + '&apikey=' + md5(jsjConfig.apikey) + '&showurl=' + config.plugins.webgui.site + '/api/user/alipay/callback%3f';
   logger.info(addr);
   await knex('alipay').insert({
     orderId,
     orderType,
     qrcode: addr,
-    amount: amount.toFixed(2)  + '',
+    amount: amount.toFixed(2) + '',
     user,
     account: account ? account : null,
     status: 'CREATE',
