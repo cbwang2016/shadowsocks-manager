@@ -70,7 +70,7 @@ For example, you can run this command:
   config file:  
   ```
   type: s
-  empty: false
+
   shadowsocks:
     address: 127.0.0.1:6001
   manager:
@@ -138,7 +138,6 @@ Usage: ssmgr [options]
     -V, --version                output the version number
     -c, --config [file]          config file, default: ~/.ssmgr/default.yml
     -d, --db [file]              sqlite3 file, sample: ~/.ssmgr/db.sqlite
-    -e, --empty                  clean database
     -t, --type [type]            type, s for server side, m for manager side
     -s, --shadowsocks [address]  ss-manager address, sample: 127.0.0.1:6001
     -m, --manager [address]      manager address, sample: 0.0.0.0:6002
@@ -167,6 +166,8 @@ Join the group if you have some problem: [https://t.me/ssmgr](https://t.me/ssmgr
 * [AlibabaCloud](https://account-intl.aliyun.com/register/intl_register.htm?biz_params=%7B%22intl%22%3A%22%7B%5C%22referralCode%5C%22%3A%5C%22koa26v%5C%22%7D%22%7D)
 
 * [BandwagonHost](https://bandwagonhost.com/aff.php?aff=19999)
+
+* [dediserve](https://manage.dediserve.com/?affid=841)
 
 ### Donate
 If you find this project helpful, please consider making a donation:  
